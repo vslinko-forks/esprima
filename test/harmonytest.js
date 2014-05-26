@@ -1143,6 +1143,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: false,
+                        computedKey: false,
                         range: [8, 20],
                         loc: {
                             start: { line: 1, column: 8 },
@@ -2159,6 +2160,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: true,
                         shorthand: false,
+                        computedKey: false,
                         range: [6, 18],
                         loc: {
                             start: { line: 1, column: 6 },
@@ -2245,6 +2247,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: true,
                         shorthand: false,
+                        computedKey: false,
                         range: [6, 22],
                         loc: {
                             start: { line: 1, column: 6 },
@@ -2324,6 +2327,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: true,
                         shorthand: false,
+                        computedKey: false,
                         range: [6, 20],
                         loc: {
                             start: { line: 1, column: 6 },
@@ -2402,6 +2406,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: true,
                         shorthand: false,
+                        computedKey: false,
                         range: [6, 15],
                         loc: {
                             start: { line: 1, column: 6 },
@@ -2480,6 +2485,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: true,
                         shorthand: false,
+                        computedKey: false,
                         range: [6, 15],
                         loc: {
                             start: { line: 1, column: 6 },
@@ -2559,6 +2565,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: true,
                         shorthand: false,
+                        computedKey: false,
                         range: [6, 17],
                         loc: {
                             start: { line: 1, column: 6 },
@@ -2638,6 +2645,7 @@ var harmonyTestFixture = {
                         kind: 'get',
                         method: false,
                         shorthand: false,
+                        computedKey: false,
                         range: [6, 21],
                         loc: {
                             start: { line: 1, column: 6 },
@@ -2742,6 +2750,7 @@ var harmonyTestFixture = {
                         kind: 'set',
                         method: false,
                         shorthand: false,
+                        computedKey: false,
                         range: [6, 29],
                         loc: {
                             start: { line: 1, column: 6 },
@@ -3292,6 +3301,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: true,
+                        computedKey: false,
                         range: [6, 7],
                         loc: {
                             start: { line: 1, column: 6 },
@@ -3320,6 +3330,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: true,
+                        computedKey: false,
                         range: [9, 10],
                         loc: {
                             start: { line: 1, column: 9 },
@@ -3449,6 +3460,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: false,
+                        computedKey: false,
                         range: [3, 21],
                         loc: {
                             start: { line: 1, column: 3 },
@@ -3512,6 +3524,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: true,
+                        computedKey: false,
                         range: [7, 8],
                         loc: {
                             start: { line: 1, column: 7 },
@@ -3620,6 +3633,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: true,
+                        computedKey: false,
                         range: [5, 6],
                         loc: {
                             start: { line: 1, column: 5 },
@@ -3728,6 +3742,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: true,
+                        computedKey: false,
                         range: [5, 6],
                         loc: {
                             start: { line: 1, column: 5 },
@@ -3836,6 +3851,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: false,
+                        computedKey: false,
                         range: [7, 10],
                         loc: {
                             start: { line: 1, column: 7 },
@@ -3900,6 +3916,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: false,
+                        computedKey: false,
                         range: [5, 8],
                         loc: {
                             start: { line: 1, column: 5 },
@@ -3964,6 +3981,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: false,
+                        computedKey: false,
                         range: [5, 8],
                         loc: {
                             start: { line: 1, column: 5 },
@@ -6168,6 +6186,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: true,
                         shorthand: false,
+                        computedKey: false,
                         range: [10, 31],
                         loc: {
                             start: { line: 1, column: 10 },
@@ -9008,6 +9027,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: false,
+                        computedKey: false,
                         range: [6, 25],
                         loc: {
                             start: { line: 1, column: 6 },
@@ -9103,6 +9123,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: true,
                         shorthand: false,
+                        computedKey: false,
                         range: [6, 15],
                         loc: {
                             start: { line: 1, column: 6 },
@@ -9276,6 +9297,7 @@ var harmonyTestFixture = {
                     kind: 'init',
                     method: false,
                     shorthand: true,
+                    computedKey: false,
                     range: [13, 14],
                     loc: {
                         start: { line: 1, column: 13 },
@@ -9304,6 +9326,7 @@ var harmonyTestFixture = {
                     kind: 'init',
                     method: false,
                     shorthand: true,
+                    computedKey: false,
                     range: [16, 17],
                     loc: {
                         start: { line: 1, column: 16 },
@@ -9381,6 +9404,7 @@ var harmonyTestFixture = {
                     kind: 'init',
                     method: false,
                     shorthand: true,
+                    computedKey: false,
                     range: [16, 17],
                     loc: {
                         start: { line: 1, column: 16 },
@@ -9518,6 +9542,7 @@ var harmonyTestFixture = {
                             kind: 'init',
                             method: false,
                             shorthand: true,
+                            computedKey: false,
                             range: [18, 19],
                             loc: {
                                 start: { line: 1, column: 18 },
@@ -9546,6 +9571,7 @@ var harmonyTestFixture = {
                             kind: 'init',
                             method: false,
                             shorthand: true,
+                            computedKey: false,
                             range: [21, 22],
                             loc: {
                                 start: { line: 1, column: 21 },
@@ -9561,6 +9587,7 @@ var harmonyTestFixture = {
                     kind: 'init',
                     method: false,
                     shorthand: false,
+                    computedKey: false,
                     range: [13, 24],
                     loc: {
                         start: { line: 1, column: 13 },
@@ -9605,6 +9632,7 @@ var harmonyTestFixture = {
                     kind: 'init',
                     method: false,
                     shorthand: false,
+                    computedKey: false,
                     range: [26, 35],
                     loc: {
                         start: { line: 1, column: 26 },
@@ -9771,6 +9799,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: true,
+                        computedKey: false,
                         range: [14, 15],
                         loc: {
                             start: { line: 1, column: 14 },
@@ -9799,6 +9828,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: true,
+                        computedKey: false,
                         range: [17, 18],
                         loc: {
                             start: { line: 1, column: 17 },
@@ -9952,6 +9982,7 @@ var harmonyTestFixture = {
                                 kind: 'init',
                                 method: false,
                                 shorthand: true,
+                                computedKey: false,
                                 range: [19, 20],
                                 loc: {
                                     start: { line: 1, column: 19 },
@@ -9980,6 +10011,7 @@ var harmonyTestFixture = {
                                 kind: 'init',
                                 method: false,
                                 shorthand: true,
+                                computedKey: false,
                                 range: [22, 23],
                                 loc: {
                                     start: { line: 1, column: 22 },
@@ -9995,6 +10027,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: false,
+                        computedKey: false,
                         range: [14, 25],
                         loc: {
                             start: { line: 1, column: 14 },
@@ -10039,6 +10072,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: false,
+                        computedKey: false,
                         range: [27, 36],
                         loc: {
                             start: { line: 1, column: 27 },
@@ -10174,6 +10208,7 @@ var harmonyTestFixture = {
                     kind: 'init',
                     method: true,
                     shorthand: false,
+                    computedKey: false,
                     range: [3, 16],
                     loc: {
                         start: { line: 1, column: 3 },
@@ -10258,6 +10293,7 @@ var harmonyTestFixture = {
                     kind: 'init',
                     method: true,
                     shorthand: false,
+                    computedKey: false,
                     range: [3, 19],
                     loc: {
                         start: { line: 1, column: 3 },
@@ -10333,6 +10369,7 @@ var harmonyTestFixture = {
                                         kind: 'init',
                                         method: false,
                                         shorthand: true,
+                                        computedKey: false,
                                         range: [12, 13],
                                         loc: {
                                             start: { line: 1, column: 12 },
@@ -10361,6 +10398,7 @@ var harmonyTestFixture = {
                                         kind: 'init',
                                         method: false,
                                         shorthand: true,
+                                        computedKey: false,
                                         range: [15, 16],
                                         loc: {
                                             start: { line: 1, column: 15 },
@@ -10376,6 +10414,7 @@ var harmonyTestFixture = {
                                 kind: 'init',
                                 method: false,
                                 shorthand: false,
+                                computedKey: false,
                                 range: [7, 18],
                                 loc: {
                                     start: { line: 1, column: 7 },
@@ -10420,6 +10459,7 @@ var harmonyTestFixture = {
                                 kind: 'init',
                                 method: false,
                                 shorthand: false,
+                                computedKey: false,
                                 range: [20, 29],
                                 loc: {
                                     start: { line: 1, column: 20 },
@@ -10486,6 +10526,7 @@ var harmonyTestFixture = {
                     kind: 'init',
                     method: true,
                     shorthand: false,
+                    computedKey: false,
                     range: [3, 48],
                     loc: {
                         start: { line: 1, column: 3 },
@@ -10622,6 +10663,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: true,
+                        computedKey: false,
                         range: [3, 4],
                         loc: {
                             start: { line: 1, column: 3 },
@@ -10690,6 +10732,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: true,
+                        computedKey: false,
                         range: [3, 4],
                         loc: {
                             start: { line: 1, column: 3 },
@@ -10891,6 +10934,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: false,
+                        computedKey: false,
                         range: [3, 12],
                         loc: {
                             start: { line: 1, column: 3 },
@@ -10966,6 +11010,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: false,
+                        computedKey: false,
                         range: [3, 7],
                         loc: {
                             start: { line: 1, column: 3 },
@@ -10994,6 +11039,7 @@ var harmonyTestFixture = {
                         kind: 'init',
                         method: false,
                         shorthand: true,
+                        computedKey: false,
                         range: [9, 10],
                         loc: {
                             start: { line: 1, column: 9 },
@@ -11211,6 +11257,7 @@ var harmonyTestFixture = {
                             kind: 'init',
                             method: false,
                             shorthand: true,
+                            computedKey: false,
                             range: [3, 4],
                             loc: {
                                 start: { line: 1, column: 3 },
@@ -11239,6 +11286,7 @@ var harmonyTestFixture = {
                             kind: 'init',
                             method: false,
                             shorthand: true,
+                            computedKey: false,
                             range: [6, 7],
                             loc: {
                                 start: { line: 1, column: 6 },
@@ -11514,6 +11562,7 @@ var harmonyTestFixture = {
                             kind: 'init',
                             method: false,
                             shorthand: true,
+                            computedKey: false,
                             range: [7, 8],
                             loc: {
                                 start: { line: 1, column: 7 },
@@ -11542,6 +11591,7 @@ var harmonyTestFixture = {
                             kind: 'init',
                             method: false,
                             shorthand: true,
+                            computedKey: false,
                             range: [10, 11],
                             loc: {
                                 start: { line: 1, column: 10 },
@@ -11770,6 +11820,181 @@ var harmonyTestFixture = {
         }
     },
 
+
+    'ES6: Computed Property Name': {
+        'a = { [b]: 1 }': {
+            type: 'ExpressionStatement',
+            expression: {
+                type: 'AssignmentExpression',
+                operator: '=',
+                left: {
+                    type: 'Identifier',
+                    name: 'a',
+                    range: [ 0, 1 ],
+                    loc: {
+                        start: { line: 1, column: 0 },
+                        end: { line: 1, column: 1 }
+                    }
+                },
+                right: {
+                    type: 'ObjectExpression',
+                    properties: [
+                        {
+                            type: 'Property',
+                            key: {
+                                type: 'Identifier',
+                                name: 'b',
+                                range: [ 7, 8 ],
+                                loc: {
+                                    start: { line: 1, column: 7 },
+                                    end: { line: 1, column: 8 }
+                                }
+                            },
+                            value: {
+                                type: 'Literal',
+                                value: 1,
+                                raw: '1',
+                                range: [ 11, 12 ],
+                                loc: {
+                                    start: { line: 1, column: 11 },
+                                    end: { line: 1, column: 12 }
+                                }
+                            },
+                            kind: 'init',
+                            method: false,
+                            shorthand: false,
+                            computedKey: true,
+                            range: [ 6, 12 ],
+                            loc: {
+                                start: { line: 1, column: 6 },
+                                end: { line: 1, column: 12 }
+                            }
+                        }
+                    ],
+                    range: [ 4, 14 ],
+                    loc: {
+                        start: { line: 1, column: 4 },
+                        end: { line: 1, column: 14 }
+                    }
+                },
+                range: [ 0, 14 ],
+                loc: {
+                    start: { line: 1, column: 0 },
+                    end: { line: 1, column: 14 }
+                }
+            },
+            range: [ 0, 14 ],
+            loc: {
+                start: { line: 1, column: 0 },
+                end: { line: 1, column: 14 }
+            }
+        },
+        'a = { [b++ + ++c]: 1 }': {
+            type: 'ExpressionStatement',
+            expression: {
+                type: 'AssignmentExpression',
+                operator: '=',
+                left: {
+                    type: 'Identifier',
+                    name: 'a',
+                    range: [ 0, 1 ],
+                    loc: {
+                        start: { line: 1, column: 0 },
+                        end: { line: 1, column: 1 }
+                    }
+                },
+                right: {
+                    type: 'ObjectExpression',
+                    properties: [
+                        {
+                            type: 'Property',
+                            key: {
+                                type: 'BinaryExpression',
+                                operator: '+',
+                                left: {
+                                    type: 'UpdateExpression',
+                                    operator: '++',
+                                    argument: {
+                                        type: 'Identifier',
+                                        name: 'b',
+                                        range: [ 7, 8 ],
+                                        loc: {
+                                            start: { line: 1, column: 7 },
+                                            end: { line: 1, column: 8 }
+                                        }
+                                    },
+                                    prefix: false,
+                                    range: [ 7, 10 ],
+                                    loc: {
+                                        start: { line: 1, column: 7 },
+                                        end: { line: 1, column: 10 }
+                                    }
+                                },
+                                right: {
+                                    type: 'UpdateExpression',
+                                    operator: '++',
+                                    argument: {
+                                        type: 'Identifier',
+                                        name: 'c',
+                                        range: [ 15, 16 ],
+                                        loc: {
+                                            start: { line: 1, column: 15 },
+                                            end: { line: 1, column: 16 }
+                                        }
+                                    },
+                                    prefix: true,
+                                    range: [ 13, 16 ],
+                                    loc: {
+                                        start: { line: 1, column: 13 },
+                                        end: { line: 1, column: 16 }
+                                    }
+                                },
+                                range: [ 7, 16 ],
+                                loc: {
+                                    start: { line: 1, column: 7 },
+                                    end: { line: 1, column: 16 }
+                                }
+                            },
+                            value: {
+                                type: 'Literal',
+                                value: 1,
+                                raw: '1',
+                                range: [ 19, 20 ],
+                                loc: {
+                                    start: { line: 1, column: 19 },
+                                    end: { line: 1, column: 20 }
+                                }
+                            },
+                            kind: 'init',
+                            method: false,
+                            shorthand: false,
+                            computedKey: true,
+                            range: [ 6, 20 ],
+                            loc: {
+                                start: { line: 1, column: 6 },
+                                end: { line: 1, column: 20 }
+                            }
+                        }
+                    ],
+                    range: [ 4, 22 ],
+                    loc: {
+                        start: { line: 1, column: 4 },
+                        end: { line: 1, column: 22 }
+                    }
+                },
+                range: [ 0, 22 ],
+                loc: {
+                    start: { line: 1, column: 0 },
+                    end: { line: 1, column: 22 }
+                }
+            },
+            range: [ 0, 22 ],
+            loc: {
+                start: { line: 1, column: 0 },
+                end: { line: 1, column: 22 }
+            }
+        }
+    },
 
     'Harmony Invalid syntax': {
 

@@ -1919,14 +1919,15 @@ parseYieldExpression: true
             };
         },
 
-        createProperty: function (kind, key, value, method, shorthand) {
+        createProperty: function (kind, key, value, method, shorthand, computedKey) {
             return {
                 type: Syntax.Property,
                 key: key,
                 value: value,
                 kind: kind,
                 method: method,
-                shorthand: shorthand
+                shorthand: shorthand,
+                computedKey: computedKey
             };
         },
 
@@ -2519,6 +2520,15 @@ parseYieldExpression: true
 
         token = lookahead;
 
+        if (match('[')) {
+            expect('[');
+            key = parseExpression();
+            expect(']');
+            expect(':');
+
+            return markerApply(marker, delegate.createProperty('init', key, parseAssignmentExpression(), false, false, true));
+        }
+
         if (token.type === Token.Identifier) {
 
             id = parseObjectPropertyKey();
@@ -2529,7 +2539,7 @@ parseYieldExpression: true
                 key = parseObjectPropertyKey();
                 expect('(');
                 expect(')');
-                return markerApply(marker, delegate.createProperty('get', key, parsePropertyFunction({ generator: false }), false, false));
+                return markerApply(marker, delegate.createProperty('get', key, parsePropertyFunction({ generator: false }), false, false, false));
             }
             if (token.value === 'set' && !(match(':') || match('('))) {
                 key = parseObjectPropertyKey();
@@ -2537,16 +2547,16 @@ parseYieldExpression: true
                 token = lookahead;
                 param = [ parseTypeAnnotatableIdentifier() ];
                 expect(')');
-                return markerApply(marker, delegate.createProperty('set', key, parsePropertyFunction({ params: param, generator: false, name: token }), false, false));
+                return markerApply(marker, delegate.createProperty('set', key, parsePropertyFunction({ params: param, generator: false, name: token }), false, false, false));
             }
             if (match(':')) {
                 lex();
-                return markerApply(marker, delegate.createProperty('init', id, parseAssignmentExpression(), false, false));
+                return markerApply(marker, delegate.createProperty('init', id, parseAssignmentExpression(), false, false, false));
             }
             if (match('(')) {
-                return markerApply(marker, delegate.createProperty('init', id, parsePropertyMethodFunction({ generator: false }), true, false));
+                return markerApply(marker, delegate.createProperty('init', id, parsePropertyMethodFunction({ generator: false }), true, false, false));
             }
-            return markerApply(marker, delegate.createProperty('init', id, id, false, true));
+            return markerApply(marker, delegate.createProperty('init', id, id, false, true, false));
         }
         if (token.type === Token.EOF || token.type === Token.Punctuator) {
             if (!match('*')) {
@@ -2560,15 +2570,15 @@ parseYieldExpression: true
                 throwUnexpected(lex());
             }
 
-            return markerApply(marker, delegate.createProperty('init', id, parsePropertyMethodFunction({ generator: true }), true, false));
+            return markerApply(marker, delegate.createProperty('init', id, parsePropertyMethodFunction({ generator: true }), true, false, false));
         }
         key = parseObjectPropertyKey();
         if (match(':')) {
             lex();
-            return markerApply(marker, delegate.createProperty('init', key, parseAssignmentExpression(), false, false));
+            return markerApply(marker, delegate.createProperty('init', key, parseAssignmentExpression(), false, false, false));
         }
         if (match('(')) {
-            return markerApply(marker, delegate.createProperty('init', key, parsePropertyMethodFunction({ generator: false }), true, false));
+            return markerApply(marker, delegate.createProperty('init', key, parsePropertyMethodFunction({ generator: false }), true, false, false));
         }
         throwUnexpected(lex());
     }
